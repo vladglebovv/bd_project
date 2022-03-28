@@ -1,0 +1,60 @@
+<ISSPECS>
+    <DESCRIPTION>
+        <TITLE>Internet-catalog</TITLE>
+        <SUBJ>Python, REST, Development, ORM, Flask, SQLAlchemy</SUBJ>
+    </DESCRIPTION>
+    <DATA>
+        <ENTITY ent_id="ProductImages">
+            <PROPERTY>id</PROPERTY>
+            <PROPERTY>product_id</PROPERTY>
+            <PROPERTY>title</PROPERTY>
+            <PROPERTY>filename</PROPERTY>
+        </ENTITY>
+        <ENTITY ent_id="ProductPrices">
+            <PROPERTY>product_id</PROPERTY>
+            <PROPERTY>period</PROPERTY>
+            <PROPERTY>price</PROPERTY>
+        </ENTITY>
+        <ENTITY ent_id="PropertyValues">
+            <PROPERTY>property_id</PROPERTY>
+            <PROPERTY>product_id</PROPERTY>
+            <PROPERTY>value</PROPERTY>
+        </ENTITY>
+        <ENTITY ent_id="Products">
+            <PROPERTY>id</PROPERTY>
+            <PROPERTY>category_id</PROPERTY>
+            <PROPERTY>title</PROPERTY>
+            <PROPERTY>description</PROPERTY>
+        </ENTITY>
+        <ENTITY ent_id="ProductCategories">
+            <PROPERTY>id</PROPERTY>
+            <PROPERTY>parent_id</PROPERTY>
+            <PROPERTY>title</PROPERTY>
+        </ENTITY>
+        <ENTITY ent_id="ProductCategoryProperties">
+            <PROPERTY>id</PROPERTY>
+            <PROPERTY>parent_id</PROPERTY>
+            <PROPERTY>category_id</PROPERTY>
+            <PROPERTY>title</PROPERTY>
+            <PROPERTY>property_type</PROPERTY>
+        </ENTITY>
+    </DATA>
+    <ROLES>
+        <ROLE>
+            <TITLE>User</TITLE>
+            <RESPOSIBILITY>гостевая роль</RESPOSIBILITY>
+            <TOTALUSERS>NOT LIMITED</TOTALUSERS>
+        </ROLE>
+    </ROLES>
+    <TECHSPEC>
+        <DEVTOOLS>
+            <DEV>Python</DEV>
+            <DEV>Flask</DEV>
+            <DEV>SQLAlchemy</DEV>
+        </DEVTOOLS>
+        <DBMS>
+            <TITLE>PostgreSQL</TITLE>
+            <VERSION>14</VERSION>
+        </DBMS>
+    </TECHSPEC>
+</ISSPECS>
